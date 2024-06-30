@@ -2,9 +2,14 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('welcome') {
             steps {
                 echo 'Hello'
+            }
+        }
+        stage('run script') {
+            steps {
+                powershell(". '.Test.ps1'")
             }
         }
     }
