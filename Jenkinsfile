@@ -9,7 +9,7 @@ pipeline {
         }
         stage('run script') {
             steps {
-                powershell(". Test.ps1")
+                powershell(".\Test.ps1")
             }
         }
     }
